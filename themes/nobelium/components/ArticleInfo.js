@@ -25,7 +25,7 @@ export const ArticleInfo = (props) => {
                   alt={BLOG.author}
                   width={24}
                   height={24}
-                  src={`https://www.xmelon.cafe/favicon.ico`}
+                  src="https://www.xmelon.cafe/favicon.ico"
                   className="rounded-full"
                 />
                 <p className="ml-2 md:block">{BLOG.author}</p>
