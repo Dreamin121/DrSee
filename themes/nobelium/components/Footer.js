@@ -21,7 +21,9 @@ export const Footer = (props) => {
      }`}
    >
      <DarkModeButton className='text-center pt-4'/>
-             <img src="https://profile-counter.glitch.me/xmelon.cafe/count.svg" alt="Visit to Study" loading="lazy" decoding="async" class="medium-zoom-image" style="object-fit: cover;">
+      <p align="center" >   
+        <img src="https://profile-counter.glitch.me/xmelon.cafe/count.svg" />  
+      </p>
      <hr className="border-gray-200 dark:border-gray-600" />
      <div className="my-4 text-sm leading-6">
        <div className="flex align-baseline justify-between flex-wrap">
