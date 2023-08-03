@@ -27,6 +27,7 @@ export const Footer = (props) => {
          <p>
            © {BLOG.AUTHOR} {copyrightDate}
          </p>
+           <img src="https://profile-counter.glitch.me/xmelon.cafe/count.svg" alt="Visit to Study" loading="lazy">
          <Vercel />
        </div>
      </div>
