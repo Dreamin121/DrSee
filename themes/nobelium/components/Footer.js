@@ -1,29 +1,29 @@
 import BLOG from '@/blog.config';
 import DarkModeButton from '@/components/DarkModeButton';
 import Vercel from '@/components/Vercel';
-import React, { useEffect } from 'react';
+//import React, { useEffect } from 'react';
 
 export const Footer = (props) => {
-   useEffect(() => {
-    // 动态加载外部JS
-    const script = document.createElement('script');
-    script.src = 'https://dl.lancdn.com/landian/dev/high/src/high.js';
-    script.async = true;
-    document.body.appendChild(script);
-    // 清除操作
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  //  useEffect(() => {
+  //   // 动态加载外部JS
+  //   const script = document.createElement('script');
+  //   script.src = 'https://dl.lancdn.com/landian/dev/high/src/high.js';
+  //   script.async = true;
+  //   document.body.appendChild(script);
+  //   // 清除操作
+  //   return () => {
+  //     document.body.removeChild(script);
+  //   };
+  // }, []);
 
-  // 确保 hig 函数在 high.js 文件中被正确定义
-  const handleHighClick = () => {
-    if (window.hig) {
-      window.hig();
-    } else {
-      console.error('hig function is not defined.');
-    }
-  };
+  // // 确保 hig 函数在 high.js 文件中被正确定义
+  // const handleHighClick = () => {
+  //   if (window.hig) {
+  //     window.hig();
+  //   } else {
+  //     console.error('hig function is not defined.');
+  //   }
+  // };
 
 
   const d = new Date();
@@ -54,9 +54,9 @@ export const Footer = (props) => {
           <p>
             © {BLOG.AUTHOR} {copyrightDate}
           </p>
-          <button type="button" onClick={handleHighClick}>
-            High一下
-          </button>
+          // <button type="button" onClick={handleHighClick}>
+          //   High一下
+          // </button>
           <Vercel />
         </div>
       </div>
