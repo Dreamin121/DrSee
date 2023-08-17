@@ -24,6 +24,9 @@ export const Footer = (props) => {
   //     console.error('hig function is not defined.');
   //   }
   // };
+    // <button type="button" onClick={handleHighClick}>
+          //   High一下
+          // </button>
 
 
   const d = new Date();
@@ -54,9 +57,7 @@ export const Footer = (props) => {
           <p>
             © {BLOG.AUTHOR} {copyrightDate}
           </p>
-          // <button type="button" onClick={handleHighClick}>
-          //   High一下
-          // </button>
+        
           <Vercel />
         </div>
       </div>
