@@ -1,7 +1,6 @@
 import BLOG from '@/blog.config'
 import DarkModeButton from '@/components/DarkModeButton'
 import Vercel from '@/components/Vercel'
-import hig from 'https://dl.lancdn.com/landian/dev/high/src/high.js'
 
 export const Footer = (props) => {
   const d = new Date()
@@ -31,7 +30,7 @@ export const Footer = (props) => {
          <p>
            © {BLOG.AUTHOR} {copyrightDate}
          </p>
-           <button type="button" class="btn btn-link" onClick={hig}>High一下</button>
+           <button type="button" className="btn btn-link" onClick={hig}>High一下</button>
          <Vercel />
        </div>
      </div>
