@@ -1,9 +1,16 @@
 import BLOG from '@/blog.config'
 import DarkModeButton from '@/components/DarkModeButton'
 import Vercel from '@/components/Vercel'
-import hig from '@/Hig'
+import Head from 'next/head';
+import { useEffect } from 'react';
+
 
 export const Footer = (props) => {
+useEffect(() => {
+    // 在这里调用hig()函数
+    hig();
+  }, []);
+
   const d = new Date()
   const currentYear = d.getFullYear()
   const { post } = props
@@ -21,6 +28,9 @@ export const Footer = (props) => {
        !fullWidth ? 'max-w-2xl px-4' : 'px-4 md:px-24'
      }`}
    >
+      <Head>
+        <script src="https://dl.lancdn.com/landian/dev/high/src/high.js" />
+      </Head>
      <DarkModeButton className='text-center pt-4'/>
       <p align="center" >   
         <img src="https://profile-counter.glitch.me/xmelon.cafe/count.svg" />  
@@ -31,7 +41,7 @@ export const Footer = (props) => {
          <p>
            © {BLOG.AUTHOR} {copyrightDate}
          </p>
-           <button type="button" className="btn btn-link" onClick={Hig.hig}>High一下</button>
+           <button type="button" className="btn btn-link" onClick={hig}>High一下</button>
          <Vercel />
        </div>
      </div>
