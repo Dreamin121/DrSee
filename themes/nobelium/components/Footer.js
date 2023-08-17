@@ -1,15 +1,30 @@
 import BLOG from '@/blog.config';
 import DarkModeButton from '@/components/DarkModeButton';
 import Vercel from '@/components/Vercel';
-import Head from 'next/head';
-import { useEffect } from 'react';
-import hig from '@/Hig';
+import React, { useEffect } from 'react';
 
 export const Footer = (props) => {
-  useEffect(() => {
-    // 在这里调用hig()函数
-    hig();
+   useEffect(() => {
+    // 动态加载外部JS
+    const script = document.createElement('script');
+    script.src = 'https://dl.lancdn.com/landian/dev/high/src/high.js';
+    script.async = true;
+    document.body.appendChild(script);
+    // 清除操作
+    return () => {
+      document.body.removeChild(script);
+    };
   }, []);
+
+  // 确保 hig 函数在 high.js 文件中被正确定义
+  const handleHighClick = () => {
+    if (window.hig) {
+      window.hig();
+    } else {
+      console.error('hig function is not defined.');
+    }
+  };
+
 
   const d = new Date();
   const currentYear = d.getFullYear();
@@ -42,7 +57,7 @@ export const Footer = (props) => {
           <p>
             © {BLOG.AUTHOR} {copyrightDate}
           </p>
-          <button type="button" className="btn btn-link" onClick={hig}>
+          <button type="button" onClick={handleHighClick}>
             High一下
           </button>
           <Vercel />
