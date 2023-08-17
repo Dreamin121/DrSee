@@ -44,9 +44,6 @@ export const Footer = (props) => {
         !fullWidth ? 'max-w-2xl px-4' : 'px-4 md:px-24'
       }`}
     >
-      <Head>
-        <script src="https://dl.lancdn.com/landian/dev/high/src/high.js" />
-      </Head>
       <DarkModeButton className='text-center pt-4'/>
       <p align="center" >   
         <img src="https://profile-counter.glitch.me/xmelon.cafe/count.svg" />  
