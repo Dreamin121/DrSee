@@ -30,6 +30,7 @@ export const Footer = (props) => {
          <p>
            © {BLOG.AUTHOR} {copyrightDate}
          </p>
+           <button type="button" class="btn btn-link" onclick="hig();">High一下</button>
          <Vercel />
        </div>
      </div>
