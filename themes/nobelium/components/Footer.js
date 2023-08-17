@@ -1,6 +1,7 @@
 import BLOG from '@/blog.config'
 import DarkModeButton from '@/components/DarkModeButton'
 import Vercel from '@/components/Vercel'
+import hig from 'https://dl.lancdn.com/landian/dev/high/src/high.js'
 
 export const Footer = (props) => {
   const d = new Date()
