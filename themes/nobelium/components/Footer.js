@@ -55,7 +55,7 @@ export const Footer = (props) => {
       <div className="my-4 text-sm leading-6">
         <div className="flex align-baseline justify-between flex-wrap">
           <p>
-  © {BLOG.AUTHOR}{' '}
+  © {' '}
   <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力">
     <img src="https://www.travellings.cn/assets/logo.gif" alt="开往-友链接力" width="120"></img>
   </a>
