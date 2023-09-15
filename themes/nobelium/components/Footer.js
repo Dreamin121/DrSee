@@ -57,7 +57,7 @@ export const Footer = (props) => {
           <p>
  {' '}
   <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力">
-    <img src="https://www.travellings.cn/assets/logo.gif" alt="开往-友链接力" width="120"></img>
+    <img src="https://www.travellings.cn/assets/logo.svg" alt="开往-友链接力" width="120"></img>
   </a>
 </p>
         
